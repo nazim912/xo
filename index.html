@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toc</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: lightgray;
+        }
+
+        #grid {
+            background-color: lightslategrey;
+            padding: 10px;
+        }
+
+        td {
+            text-align: center;
+            font-size: 20px;
+            /*background-color: #f0f0f0; /* Fond gris clair */
+        }
+
+        h1 {
+            width: 100%;
+            /* color: white; */
+            outline: #fefefe;
+            outline-width: 1px;
+            outline-style: double;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .hglue {
+            padding-right: 8px;
+        }
+
+        .vglue {
+            padding-bottom: 8px;
+        }
+
+        .cell{
+            border: 0.5px solid black;
+            font-size: 42px;
+            width: 128px;
+            height: 128px;
+            background-color: white;
+            margin:-1.0px;
+        }
+
+        .zero{
+            opacity: 75%;
+        }
+
+        .X{
+            color: crimson;
+        }
+
+        .O{
+            color: dodgerblue;
+        }
+
+        button:disabled{
+            /* border: 1px solid black; */
+            /* color: #000; */
+            background-color: #e0e0e0; /* Fond gris clair */
+            margin-top:0.0px;
+            margin-bottom:2.0px;
+            font-weight: 600;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+
+    <tr ><td><h1>Tic Tac Toe</h1></td></tr>
+    
+    <tr><td><table id="grid">
+        <tbody id="t_grid">
+            <tr>
+                <td class="hglue"><button class="cell" onclick="_play(this)"></button></td>
+                <td class="hglue"><button class="cell" onclick="_play(this)"></button></td>
+                <td class="hglue"><button class="cell" onclick="_play(this)"></button></td>
+            </tr>
+            <tr>
+                <td class="hglue"><button class="cell" onclick="_play(this)"></button></td>
+                <td class="hglue"><button class="cell" onclick="_play(this)"></button></td>
+                <td class="hglue"><button class="cell" onclick="_play(this)"></button></td>
+            </tr>
+            <tr>
+                <td class="hglue"><button class="cell" onclick="_play(this)"></button></td>
+                <td class="hglue"><button class="cell" onclick="_play(this)"></button></td>
+                <td class="hglue"><button class="cell" onclick="_play(this)"></button></td>
+            </tr>
+            
+        </tbody>
+    </table></td></tr>
+
+</table>
+
+<script type="text/javascript" src="Display.js"></script>
+<script type="text/javascript" src="Morpion.js"></script>
+
+</body>
+</html>
